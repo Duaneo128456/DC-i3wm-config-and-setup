@@ -6,11 +6,14 @@ you will need to run the "install_i3_tools.sh" script first, then perform a
 reboot of your system before replacing the default configuration file. 
 
 After the reboot you will have to login.
-Once you have logged in you will be presented with a configuration wizard asking if you wish to use the "alt" key or "win" as your modifier key. 
+Once you have logged in you will be presented with a configuration wizard asking 
+if you wish to use the "alt" key or "win" as your modifier key. 
 
-Once you have logged in and completed the quick wizard then replace the default configuration file with the copy from this github.
+Once you have logged in and completed the quick wizard then replace the default 
+configuration file with the copy from this github.
 The location of the configuration file is: /home/*yourusername*/.config/i3/
 
 
 
-(At present then I will be uploading a configuration file using the "win" key, I may release a configuration file using the "alt" key at a later date)
+(At present then I will be uploading a configuration file using the "win" key, I 
+may release a configuration file using the "alt" key at a later date)
