@@ -49,6 +49,6 @@ keybinds currently in place:
 - microphone mute key to mute and unmute the microphone. (in beta testing at present)
 - Windows key and n to open pcmanfm
 - Windows key and c to open xcalc
-- Windows key and D to open dmenu (to open new apps) [escape key to close dmenu if you decide not to open an app]
+- Windows key and d to open dmenu (to open new apps) [escape key to close dmenu if you decide not to open an app]
 
 btop and neofetch will need to be opened via the terminal.
