@@ -13,3 +13,21 @@ There is a script to install the necessary packages such as brightness controls,
 There is a configuration file that can be used to replace the default file created after installing i3wm. 
 
 
+Packages that will be installed via this script:
+- i3 window manager - tiling window manager
+- lightdm
+- xorg
+- picom - lightweight compositor for x11
+- dmenu - "start menu"
+- scrot - screenshot tool
+- gdebi - GUI tool for installing .deb files
+- btop - system monitor tool
+- xterm - terminal application
+- pcmanfm - file manager
+- l3afpad - notepad application
+- brightnessctl - to be able to adjust your screen brightness on a laptop
+- fastfetch - display system configuration
+- firefox-esr - extended support version of firefox
+- network manager applet - to be able to select wifi networks from the system tray
+- diodon - to add copy and paste functionality
+- btop - command line system monitor
