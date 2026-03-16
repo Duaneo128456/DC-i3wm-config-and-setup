@@ -1,0 +1,16 @@
+Please Read this before completing an installation!
+
+You will need to use the "chmod +x" command to be able to execute my script. 
+
+you will need to run the "install_i3_tools.sh" script first, then perform a 
+reboot of your system before replacing the default configuration file. 
+
+When you first bootup you will have to login.
+Once you have logged in you will be presented with a configuration wizard asking 
+if you wish to use the "alt" key or "win" as your modifier key. 
+
+Once you have logged in and completed the quick wizard then replace the default 
+configuration file with the copy from this github.
+
+(At present then I will be uploading a configuration file using the "win" key, I may
+release a configuration file using the "alt" key at a later date)
