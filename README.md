@@ -17,6 +17,8 @@ What is being done via this project:
 - added a x11 compositor (via the configuration file)
 - installed a display manager
 - installed a x window manager
+- lxappearance installed for customisation
+- arandr installed to adjust screen resolution from GUI
 
 There is a script to install the necessary packages such as brightness controls, a web browser, a text editor and a file manager.
 
@@ -40,6 +42,8 @@ Packages that will be installed via this script:
 - network manager applet - to be able to select wifi networks from the system tray
 - diodon - to add copy and paste functionality
 - btop - command line system monitor
+- lxappearance - to be able to customise look and feel
+- arandr - GUI to be able to change screen resolution etc
 
 
 
