@@ -2,9 +2,9 @@
 My i3wm setup script and a configuration file for a basic Debian 13 install. 
 The only options selected during installation for this setup to work is "Standard System Utilities" with all other options not selected during installation of Debian 13 (Trixie).
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~   Please read "Install_instructions.txt" before installing this set of scripts.   ~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Please read "Install_instructions.txt" before installing this set of scripts.**
+
 
 What is being done via this project:
 - installing a basic suite of applications.   
