@@ -13,7 +13,8 @@ Once you have logged in and completed the quick wizard then replace the default
 configuration file with the copy from this github.
 The location of the configuration file is: /home/*yourusername*/.config/i3/
 
-
+my i3 status configuration file is now available. 
+The location of the configuration file is: /etc/i3status.conf
 
 (At present then I will be uploading a configuration file using the "win" key, I 
 may release a configuration file using the "alt" key at a later date)
