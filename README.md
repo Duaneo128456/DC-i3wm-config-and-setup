@@ -60,3 +60,6 @@ keybinds currently in place:
 - Windows key and d to open dmenu (to open new apps) [escape key to close dmenu if you decide not to open an app]
 
 btop and neofetch will need to be opened via the terminal.
+
+** Change Log **
+17-03-2026 - now i3status configuration file added
