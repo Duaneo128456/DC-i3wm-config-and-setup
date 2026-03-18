@@ -20,6 +20,7 @@ What is being done via this project:
 - lxappearance installed for customisation
 - arandr installed to adjust screen resolution from GUI
 - alsa-utils installed to access alsamixer via CLI to alter sound settings, amixer also within this package to enable sound controls linked to configuration file.
+- feh - to set backgrounds
 
 There is a script to install the necessary packages such as brightness controls, a web browser, a text editor and a file manager.
 
@@ -47,6 +48,7 @@ Packages that will be installed via this script:
 - arandr - GUI to be able to change screen resolution etc
 - alsamixer - CLI sound mixer
 - amixer - CLI command to be able to adjust volume and mute and unmute (required to make keybinds related to sound work)
+- feh - to set backgrounds
 
 
 
@@ -66,4 +68,4 @@ btop and neofetch will need to be opened via the terminal.
 
 ** Change Log **
 17-03-2026 - now i3status configuration file added
-18/03/2026 - alsa-utils added to install script, this package contains alsamixer (CLI sound mixer), and amixer (which is used within the configuration file and is required for sound related keybinds)
+18/03/2026 - alsa-utils added to install script, this package contains alsamixer (CLI sound mixer), and amixer (which is used within the configuration file and is required for sound related keybinds), feh package added to install script and also added to configuration file to setup a background by default.
