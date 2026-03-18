@@ -29,7 +29,7 @@ echo "#   pcmanfm, gdebi, btop (terminal system monitor), and    #"
 echo "#   fastfetch (display system configuration)               #"
 echo "############################################################"
 
-sudo apt install gdebi l3afpad firefox-esr pcmanfm btop fastfetch picom xterm arandr lxappearance -y
+sudo apt install gdebi l3afpad firefox-esr pcmanfm btop fastfetch picom xterm arandr lxappearance feh -y
 
 echo "#############################################################"
 echo "#   Please now reboot your system and chose "win" as your   #"
