@@ -19,7 +19,7 @@ echo "#   Installing network manager applet, screenshot tool,   #"
 echo "#   copy and paste functionality, brightness controls.    #"
 echo "###########################################################"
 
-sudo apt install network-manager-applet scrot diodon brightnessctl -y
+sudo apt install network-manager-applet scrot diodon brightnessctl alsa-utils -y
 
 echo ""
 
