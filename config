@@ -34,6 +34,9 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+# background
+exec_always --no-startup-id feh --bg-fill /usr/share/wallpapers/ceratopsian/contents/images/1080x2160.svg
+
 # Starting picom (X11 compositor)
 exec --no-startup-id picom -b
 
