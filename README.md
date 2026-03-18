@@ -67,5 +67,5 @@ keybinds currently in place:
 btop and neofetch will need to be opened via the terminal.
 
 ** Change Log **
-17-03-2026 - now i3status configuration file added
-18/03/2026 - alsa-utils added to install script, this package contains alsamixer (CLI sound mixer), and amixer (which is used within the configuration file and is required for sound related keybinds), feh package added to install script and also added to configuration file to setup a background by default.
+- 17-03-2026 - now i3status configuration file added
+- 18/03/2026 - alsa-utils added to install script, this package contains alsamixer (CLI sound mixer), and amixer (which is used within the configuration file and is required for sound related keybinds), feh package added to install script and also added to configuration file to setup a background by default.
