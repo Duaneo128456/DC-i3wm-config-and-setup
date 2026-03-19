@@ -18,8 +18,8 @@ echo "This script will setup a basic Debian 13 (Trixie) install of I3 Window Man
 echo "This is a personal project (Mainly for myself to be able to setup a basic I3-WM system)"
 echo "but if anyone else decides to use this then I am greatful for your testing and support."
 echo "I will not be adding any new features to this just essential updates"
-echo "Please type "continue" to start this script"
-echo "If you wish to cancel this script without running it then type "cancel""
+echo "Please type 'continue' to start this script"
+echo "If you wish to cancel this script without running it then type 'cancel'"
 
 read varcon
 
