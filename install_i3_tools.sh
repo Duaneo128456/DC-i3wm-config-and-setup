@@ -37,7 +37,9 @@ sudo apt install network-manager-applet scrot diodon brightnessctl alsa-utils -y
 # This installs basic apps such as: firefox-esr, l3afpad, pcmanfm, gdebi, 
 # btop (terminal system monitor), fastfetch (display system configuration)               
 
-sudo apt install gdebi l3afpad firefox-esr pcmanfm btop fastfetch picom xterm arandr lxappearance feh -y
+sudo apt install gdebi l3afpad firefox-esr pcmanfm btop fastfetch picom xterm arandr lxappearance feh gpicview -y
+
+echo ""
 
 echo "#############################################################"
 echo "#   Please now reboot your system and chose "win" as your   #"
@@ -51,6 +53,17 @@ echo "~   WARNING!!!:                                             ~"
 echo "~   Without using my configuration file then parts of this  ~"
 echo "~   install will not function as intended.                  ~"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+fi
+
+echo ""
+echo ""
+echo "            Type 'reboot' to reboot your system            "
+
+read $varreb
+
+if [ $varreb = reboot ]
+then
+sudo shutdown -r now
 fi
 
 if [ $varcon = cancel ]
