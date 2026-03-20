@@ -59,7 +59,7 @@ echo ""
 echo ""
 echo "            Type 'reboot' to reboot your system            "
 
-read $varreb
+read varreb
 
 if [ $varreb = reboot ]
 then
