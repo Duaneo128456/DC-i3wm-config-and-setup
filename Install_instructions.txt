@@ -17,5 +17,7 @@ The location of the configuration file is: /home/*yourusername*/.config/i3/
 my i3 status configuration file is now available. 
 The location of the configuration file is: /etc/i3status.conf
 
+once you have run "move-configs.sh" then please press your selected modifier key and shift and r to restart i3wm to start using the new config files.  
+
 (At present then I will be uploading a configuration file using the "win" key, I 
 may release a configuration file using the "alt" key at a later date)
