@@ -1,16 +1,17 @@
 Please Read this before completing an installation!
 
-You will need to use the "chmod +x" command to be able to execute my script. 
+You will need to use the "chmod +x" command to be able to execute my scripts. 
 
 you will need to run the "install_i3_tools.sh" script first, then perform a 
-reboot of your system before replacing the default configuration file. 
+reboot of your system BEFORE replacing the default configuration file (you will
+be promoted within the first script to type "reboot"). 
 
 After the reboot you will have to login.
 Once you have logged in you will be presented with a configuration wizard asking 
 if you wish to use the "alt" key or "win" as your modifier key. 
 
-Once you have logged in and completed the quick wizard then replace the default 
-configuration file with the copy from this github.
+Once you have logged in and completed the quick wizard then run "move-configs.sh" (which will move the config files into their respective places), this second script can be ran by opening the terminal with your selected modifier key and the enter key to open a terminal. 
+
 The location of the configuration file is: /home/*yourusername*/.config/i3/
 
 my i3 status configuration file is now available. 
