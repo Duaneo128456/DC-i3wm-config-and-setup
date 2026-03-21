@@ -18,7 +18,7 @@ echo "This script will setup a basic Debian 13 (Trixie) install of I3 Window Man
 echo "This is a personal project (Mainly for myself to be able to setup a basic I3-WM system)"
 echo "but if anyone else decides to use this then I am greatful for your testing and support."
 echo "I will not be adding any new features to this just essential updates"
-echo "Would you list to continue? (y/n)
+echo "Would you list to continue? (y/n)"
 
 read varcon
 
