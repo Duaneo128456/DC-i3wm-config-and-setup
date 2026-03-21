@@ -43,6 +43,9 @@ exec --no-startup-id picom -b
 ## Starting copy and paste functionality via diodon
 exec --no-startup-id diodon
 
+# policykit helper
+exec --no-startup-id /usr/lib/policykit-1/polkit-agent-helper-1 &
+
 # Use amixer to adjust volume in Alsa.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q sset Master 5%+ && $refresh_i3status
