@@ -28,7 +28,7 @@ There is a configuration file that can be used to replace the default file creat
 - lightdm - simple display manager
 - xorg - xorg x window system
 - picom - lightweight compositor for x11
-- dmenu - "start menu"
+- rofi - "start menu"
 - scrot - screenshot tool
 - gdebi - GUI tool for installing .deb files
 - xterm - terminal application
@@ -59,7 +59,7 @@ There is a configuration file that can be used to replace the default file creat
 - microphone mute key to mute and unmute the microphone. (in beta testing at present)
 - Windows key and n to open pcmanfm
 - Windows key and c to open xcalc
-- Windows key and d to open dmenu (to open new apps) [escape key to close dmenu if you decide not to open an app]
+- Windows key and d to open rofi (to open new apps) [escape key to close rofi if you decide not to open an app]
 
 btop and neofetch will need to be opened via the terminal.
 
@@ -67,3 +67,4 @@ btop and neofetch will need to be opened via the terminal.
 - 17-03-2026 - now i3status configuration file added
 - 18/03/2026 - alsa-utils added to install script, this package contains alsamixer (CLI sound mixer), and amixer (which is used within the configuration file and is required for sound related keybinds), feh package added to install script and also added to configuration file to setup a background by default.
 - 20/03/2026 - image viewer added to the package list within install shell script
+- 21/03/2026 - rofi added to replace dmenu
