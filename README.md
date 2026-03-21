@@ -46,6 +46,7 @@ There is a configuration file that can be used to replace the default file creat
 - amixer - CLI command to be able to adjust volume and mute and unmute (required to make keybinds related to sound work)
 - feh - to set backgrounds
 - gpicview - to view pictures
+- lxpolkit - policy kit helper 
 
 
 
@@ -67,4 +68,4 @@ btop and neofetch will need to be opened via the terminal.
 - 17-03-2026 - now i3status configuration file added
 - 18/03/2026 - alsa-utils added to install script, this package contains alsamixer (CLI sound mixer), and amixer (which is used within the configuration file and is required for sound related keybinds), feh package added to install script and also added to configuration file to setup a background by default.
 - 20/03/2026 - image viewer added to the package list within install shell script
-- 21/03/2026 - rofi added to replace dmenu, script added to automate moving the config files.
+- 21/03/2026 - rofi added to replace dmenu, script added to automate moving the config files, lxpolkit added to install script and into config file
