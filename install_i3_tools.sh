@@ -37,7 +37,7 @@ sudo apt install network-manager-applet scrot diodon brightnessctl alsa-utils -y
 # This installs basic apps such as: firefox-esr, l3afpad, pcmanfm, gdebi, 
 # btop (terminal system monitor), fastfetch (display system configuration)               
 
-sudo apt install gdebi l3afpad firefox-esr pcmanfm btop fastfetch picom xterm arandr lxappearance feh gpicview -y
+sudo apt install gdebi l3afpad firefox-esr pcmanfm btop fastfetch picom xterm arandr lxappearance feh gpicview rofi -y
 
 echo ""
 
