@@ -13,11 +13,11 @@ if [ $varyon = y ]
 then
 # moving the config file for i3wm and keybinds
 
-sudo mv ./config "$HOME/.config/i3/config"
+sudo cp ./config "$HOME/.config/i3/config"
 
 # moving the i3status config file
 
-sudo mv ./i3status.conf /etc/i3status.conf
+sudo cp ./i3status.conf /etc/i3status.conf
 echo ""
 echo "#######################################################################################"
 echo "#   Both config files have been moved to their respective places within your system   #"
