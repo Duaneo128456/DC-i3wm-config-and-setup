@@ -18,12 +18,11 @@ echo "This script will setup a basic Debian 13 (Trixie) install of I3 Window Man
 echo "This is a personal project (Mainly for myself to be able to setup a basic I3-WM system)"
 echo "but if anyone else decides to use this then I am greatful for your testing and support."
 echo "I will not be adding any new features to this just essential updates"
-echo "Please type 'continue' to start this script"
-echo "If you wish to cancel this script without running it then type 'cancel'"
+echo "Would you list to continue? (y/n)
 
 read varcon
 
-if [ $varcon = continue ]
+if [ $varcon = y ]
 then
 # this installs base i3 system
 
@@ -32,12 +31,12 @@ sudo apt install i3 suckless-tools xorg lightdm -y
 # This installs: network manager applet, screenshot capability, copy and paste capability,
 # screen brightness controls and sound controls
 
-sudo apt install network-manager-applet scrot diodon brightnessctl alsa-utils -y
+sudo apt install network-manager-applet scrot diodon brightnessctl alsa-utils picom feh -y
 
 # This installs basic apps such as: firefox-esr, l3afpad, pcmanfm, gdebi, 
 # btop (terminal system monitor), fastfetch (display system configuration)               
 
-sudo apt install gdebi l3afpad firefox-esr pcmanfm btop fastfetch picom xterm arandr lxappearance feh gpicview rofi -y
+sudo apt install gdebi l3afpad firefox-esr pcmanfm btop fastfetch xterm arandr lxappearance gpicview rofi -y
 
 echo ""
 
@@ -66,7 +65,7 @@ then
 sudo shutdown -r now
 fi
 
-if [ $varcon = cancel ]
+if [ $varcon = n ]
 then
 echo "#############################################################"
 echo "# No changes have been made to your system, if you wish     #"
