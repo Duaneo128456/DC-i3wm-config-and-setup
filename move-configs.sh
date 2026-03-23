@@ -6,6 +6,7 @@ echo "# their correct locations.                                                
 echo "########################################################################################"
 echo ""
 echo "Would you like to continue? (y/n)"
+echo ""
 
 read varyon
 
@@ -37,7 +38,8 @@ echo "~  Would you like to change the 'sources.list' for apt to include 'contrib
 echo "~  remove the install media from your apt list?                                                 ~"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 echo ""
-echo " Type 'y' to make this change or type 'n' to keep the sources list as the out of the box configuration."
+echo "Would you like to make this change? (y/n)."
+echo ""
 
 read varnoy
 
