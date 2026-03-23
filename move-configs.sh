@@ -1,9 +1,11 @@
 #! /bin/bash
 
-echo "########################################################################################"
-echo "# This shell script will move the config files from within this folder into            #"
-echo "# their correct locations.                                                             #"
-echo "########################################################################################"
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+echo "!                                                                                      !"
+echo "! This shell script will move the config files from within this folder into            !"
+echo "! their correct locations.                                                             !"
+echo "!                                                                                      !"
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 echo ""
 echo "Would you like to continue? (y/n)"
 echo ""
@@ -20,23 +22,29 @@ sudo cp ./config "$HOME/.config/i3/config"
 
 sudo cp ./i3status.conf /etc/i3status.conf
 echo ""
-echo "#######################################################################################"
-echo "#   Both config files have been moved to their respective places within your system   #"
-echo "#######################################################################################"
+echo "!=====================================================================================!"
+echo "=                                                                                     ="
+echo "=   Both config files have been moved to their respective places within your system   ="
+echo "=                                                                                     ="
+echo "!=====================================================================================!"
 fi
 
 if [ $varyon = n ]
 then
-echo "##############################################################"
-echo "#   No changes have been made to the default config files!   #"
-echo "##############################################################"
+echo "!============================================================!"
+echo "=                                                            ="
+echo "=   No changes have been made to the default config files!   ="
+echo "=                                                            ="
+echo "!============================================================!"
 fi
 
 echo ""
-echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-echo "~  Would you like to change the 'sources.list' for apt to include 'contrib' and 'non-free' and  ~"
-echo "~  comment out the install media from your apt list?                                            ~"
-echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+echo "?????????????????????????????????????????????????????????????????????????????????????????????????"
+echo "?                                                                                               ?"
+echo "?  Would you like to change the 'sources.list' for apt to include 'contrib' and 'non-free' and  ?"
+echo "?  comment out the install media from your apt list?                                            ?"
+echo "?                                                                                               ?"
+echo "?????????????????????????????????????????????????????????????????????????????????????????????????"
 echo ""
 echo "Would you like to make this change? (y/n)."
 echo ""
@@ -47,19 +55,64 @@ if [ $varnoy = y ]
 then
 sudo cp ./sources.list /etc/apt/sources.list
 echo ""
-echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+echo "!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!"
+echo "~                                                                                     ~"
 echo "~  Your 'sources.list' file has been altered to include 'contrib' and 'non-free' and  ~"
 echo "~  removed the install media                                                          ~"
-echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+echo "~                                                                                     ~"
+echo "!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!"
 fi
 
 if [ $varnoy = n ]
 then
 echo ""
-echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-echo "Your 'sources.list' had remained unaltered"
-echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+echo "!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!"
+echo "~                                              ~"
+echo "~  Your 'sources.list' had remained unaltered  ~"
+echo "~                                              ~"
+echo "!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!"
 fi
 
+echo ""
+echo "?????????????????????????????????????????????????????"
+echo "?                                                   ?"
+echo "?  Would you like to add a pre-built picom config   ?"
+echo "?  file to your system?                             ?"
+echo "?                                                   ?"
+echo "?????????????????????????????????????????????????????"
+echo ""
+echo "Would you like to make this change? (y/n)"
+echo ""
+read varpic
+
+if [ $varpic = y ] 
+then
+# making a picom directory within the '.config' folder
+sudo mkdir "$HOME/.config/picom"
+
+# copying the picom config file to the new made directory
+sudo cp ./picom.conf "$HOME/.config/picom/picom.conf"
+
+echo "!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!"
+echo "~                                                      ~"
+echo "~  You have successfully copied the picom config file  ~"
+echo "~  to '~/.config/picom/picom.conf'                     ~"
+echo "~                                                      ~"
+echo "!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!"
+fi
+
+if [ $varpic = n ]
+then
+echo "!//////////////////////////////////////////////////////!"
+echo "/                                                      /"
+echo "/   There is currently no picom config file in place   /"
+echo "/   You will need to copy the sample file from         /"
+echo "/   '/usr/share/doc/picom/examples/picom.sample.conf'  /"
+echo "/   and place this within                              /"
+echo "/   '/home/*your-username*/.config/picom/' and remain  /"
+echo "/   the file to 'picom.conf'                           /"
+echo "/                                                      /"
+echo "!//////////////////////////////////////////////////////!"
+fi
 
 # Created by Duane Cambron
