@@ -30,3 +30,32 @@ echo "##############################################################"
 echo "#   No changes have been made to the default config files!   #"
 echo "##############################################################"
 fi
+
+echo ""
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+echo "~  Would you like to change the 'sources.list' for apt to include 'contrib' and 'non-free' and  ~"
+echo "~  remove the install media from your apt list?                                                 ~"
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+echo ""
+echo " 'Y' to make this change or 'N' to keep the sources list as the out of the box configuration."
+
+read varnoy
+
+if [ $varnoy = Y ]
+then
+sudo cp ./sources.list /etc/apt/sources.list
+echo ""
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+echo "~  Your 'sources.list' file has been altered to include 'contrib' and 'non-free' and  ~"
+echo "~  removed the install media                                                          ~"
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+fi
+
+if [ $varnoy = N ]
+echo ""
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+echo "Your 'sources.list' had remained unaltered"
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+fi
+
+# Created by Duane Cambron
