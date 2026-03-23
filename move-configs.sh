@@ -61,29 +61,5 @@ echo "Your 'sources.list' had remained unaltered"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 fi
 
-echo ""
-echo "?//////////////////////////////////////////////////////////////////////////////////?"
-echo "/   Would you like to move the default 'picom.conf' file to your ./config folder?  /"
-echo "/   Without doing so will mean picom will not work correctly                       /"
-echo "?//////////////////////////////////////////////////////////////////////////////////?"
-echo ""
-echo "Would you like to proceed? (y/n)"
-echo ""
-read varpic
-
-if [ $varpic = y ]
-then
-mkdir "$HOME/.config/picom"
-sudo cp ./picom.conf "$HOME/.config/picom/picom.conf"
-fi
-
-if [ $varpic = n ]
-then
-echo "!///////////////////////////////////////////////////////////////////////////!"
-echo "/  The Picom config file has not been created within within the '.config'   /" 
-echo "/  directory. This may cause errors or issues by not having a picom config  /" 
-echo "/ file!                                                                     /"
-echo "!///////////////////////////////////////////////////////////////////////////!"
-fi
 
 # Created by Duane Cambron
