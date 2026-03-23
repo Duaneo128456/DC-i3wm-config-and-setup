@@ -69,3 +69,4 @@ btop and neofetch will need to be opened via the terminal.
 - 18/03/2026 - alsa-utils added to install script, this package contains alsamixer (CLI sound mixer), and amixer (which is used within the configuration file and is required for sound related keybinds), feh package added to install script and also added to configuration file to setup a background by default.
 - 20/03/2026 - image viewer added to the package list within install shell script
 - 21/03/2026 - rofi added to replace dmenu, script added to automate moving the config files, lxpolkit added to install script and into config file
+- 23/03/2026 - option added to "move-configs.sh" to alter the 'sources.list' file within debian 13 to include 'contrib' and 'non-free' and commented out the installation media from the list of sources.
