@@ -115,4 +115,34 @@ echo "/                                                      /"
 echo "!//////////////////////////////////////////////////////!"
 fi
 
+echo ""
+echo "????????????????????????????????????????????????????????"
+echo "?                                                      ?"
+echo "?   If you wish picom to startup with your system      ?"
+echo "?   then you may need a picom.desktop file.            ?"
+echo "?   This script can add one if one is not present in   ?"
+echo "?   '/etc/xdg/autostart'.                              ?"
+echo "?                                                      ?"
+echo "????????????????????????????????????????????????????????"
+echo ""
+echo "Would you like to copy this .desktop file to the xdg autostart directory? (y/n)"
+echo ""
+read vardesk
+
+if [ $vardesk = y ]
+then
+sudo cp ./picom.desktop /etc/xdg/autostart
+fi
+
+if [ $vardesk = n ]
+then
+echo "-------------------------------------------------"
+echo "-                                               -"
+echo "-   The picom.desktop file has NOT been moved   -"
+echo "-   or altered if present. If not present       -"
+echo "-   you may be without a picom.desktop file     -"
+echo "-                                               -"
+echo "-------------------------------------------------"
+fi
+
 # Created by Duane Cambron
