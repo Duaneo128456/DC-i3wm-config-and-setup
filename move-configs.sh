@@ -37,11 +37,11 @@ echo "~  Would you like to change the 'sources.list' for apt to include 'contrib
 echo "~  remove the install media from your apt list?                                                 ~"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 echo ""
-echo " 'Y' to make this change or 'N' to keep the sources list as the out of the box configuration."
+echo " Type 'y' to make this change or type 'n' to keep the sources list as the out of the box configuration."
 
 read varnoy
 
-if [ $varnoy = Y ]
+if [ $varnoy = y ]
 then
 sudo cp ./sources.list /etc/apt/sources.list
 echo ""
@@ -51,7 +51,7 @@ echo "~  removed the install media                                              
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 fi
 
-if [ $varnoy = N ]
+if [ $varnoy = n ]
 then
 echo ""
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
