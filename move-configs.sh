@@ -35,7 +35,7 @@ fi
 echo ""
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 echo "~  Would you like to change the 'sources.list' for apt to include 'contrib' and 'non-free' and  ~"
-echo "~  remove the install media from your apt list?                                                 ~"
+echo "~  comment out the install media from your apt list?                                            ~"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 echo ""
 echo "Would you like to make this change? (y/n)."
