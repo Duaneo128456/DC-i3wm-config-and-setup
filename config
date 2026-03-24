@@ -30,21 +30,29 @@ exec --no-startup-id dex --autostart --environment i3
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
+# Please use arandr to create a screenlayout shell script and saving this to the default location, make it executable 
+# with 'sudo chmod +x /path/to/shell_script' and place the name at the end of this line listed below ensuring you 
+# replace '**YOUR_USERNAME**' with your chosen username when setting up your system. After you have done this then you
+# can uncomment out this line by removing the '#' from the commane below.
+# exec_always --no-startup-id /home/**YOUR_USERNAME**/.screenlayout/**PUT_NAME_OF_SHELL_SCRIPT_HERE**
+
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-# (check not contained within /etc/xdg/autostart before uncommenting)
+# (check not contained within /etc/xdg/autostart before uncommenting by removing the '#' from the command below)
 # exec --no-startup-id nm-applet
 
 # background
 exec_always --no-startup-id feh --bg-fill /usr/share/wallpapers/ceratopsian/contents/images/1080x2160.svg
 
-# Starting picom (X11 compositor) (check not contained within /etc/xdg/autostart before uncommenting)
+# Starting picom (X11 compositor) (check not contained within /etc/xdg/autostart before uncommenting by removing the '#' from 
+# the command below)
 # exec --no-startup-id picom -b
 
-## Starting copy and paste functionality via diodon (check not contained within /etc/xdg/autostart before uncommenting)
+## Starting copy and paste functionality via diodon (check not contained within /etc/xdg/autostart before uncommenting by 
+# removing the '#' on the command below)
 # exec --no-startup-id diodon
 
-# policykit helper (check not contained within /etc/xdg/autostart before uncommenting)
+# policykit helper (check not contained within /etc/xdg/autostart before uncommentingby removing the '#' on the command below)
 # exec --no-startup-id /usr/lib/policykit-1/polkit-agent-helper-1 &
 
 # Use amixer to adjust volume in Alsa.
