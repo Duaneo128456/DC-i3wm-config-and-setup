@@ -70,3 +70,4 @@ btop and neofetch will need to be opened via the terminal.
 - 20/03/2026 - image viewer added to the package list within install shell script
 - 21/03/2026 - rofi added to replace dmenu, script added to automate moving the config files, lxpolkit added to install script and into config file
 - 23/03/2026 - option added to "move-configs.sh" to alter the 'sources.list' file within debian 13 to include 'contrib' and 'non-free' and commented out the installation media from the list of sources.
+- 24/03/2026 - added ability to add a screen layout within the config file for i3wm with instructions provided which is located within '.config/i3/' folder within your home directory. Please read these instructions fully and carefully.
