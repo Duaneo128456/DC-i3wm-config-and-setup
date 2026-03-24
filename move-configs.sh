@@ -88,10 +88,10 @@ read varpic
 if [ $varpic = y ] 
 then
 # making a picom directory within the '.config' folder
-sudo mkdir "$HOME/.config/picom"
+mkdir "$HOME/.config/picom"
 
 # copying the picom config file to the new made directory
-sudo cp ./picom.conf "$HOME/.config/picom/picom.conf"
+cp ./picom.conf "$HOME/.config/picom/picom.conf"
 
 echo "!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!"
 echo "~                                                      ~"
