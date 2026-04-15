@@ -19,6 +19,8 @@ Please run "wifi_fix.sh" to resolve having two IP addressed due to wifi install 
 - installed a display manager
 - installed a x window manager
 - basic apps to customise your system, including lxappearance, arandr and feh.
+- shell script to fix dual IP addresses being assigned due to DHCPCD and network manager both assigning an IP address.
+- shell script to enable usernames within lightdm. *Please read prompt within shell script to be able to enable this within the config file as it currently requires manually editing a file via nano at present.*
 
 
 There is a configuration file that can be used to replace the default file created after installing i3wm. (this is required for the additional keybinds to be put into place, you will also have to press the windows key and shift and r to restart i3wm for the new keybinds to take effect.[assuming you chose the windows key as the modifier key within the wizard at first startup, at present it is recommended to chose the windows key as your modifier as my configuration script is currently only available with this modifier, if you chose the alt key within the setup wizard then my configuration will currently over write this.] if you chose the alt key during setup and have replaced the configuration script for i3wm you will either need to press alt and shift and r to restart i3wm but this will then automatically change all keybinds as listed below. 
@@ -73,3 +75,4 @@ btop and neofetch will need to be opened via the terminal.
 - 23/03/2026 - option added to "move-configs.sh" to alter the 'sources.list' file within debian 13 to include 'contrib' and 'non-free' and commented out the installation media from the list of sources.
 - 24/03/2026 - added ability to add a screen layout within the config file for i3wm with instructions provided which is located within '.config/i3/' folder within your home directory. Please read these instructions fully and carefully.
 - 15/04/2026 - shell script made and implemented to fix bug that causes two IP addresses being provided due to DHCPCD and network manager both assigning an IP address due to installing debian trixie without a DE environment at first install. Please run 'wifi_fix.sh' to resolve this issue. Documentation has been added to this read me as well as install instructions to remedy this.
+- 15/04/2026 - shell script added to enable usernames within lightdm.
