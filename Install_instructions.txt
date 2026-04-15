@@ -21,3 +21,7 @@ once you have run "move-configs.sh" then please press your selected modifier key
 
 (At present then I will be uploading a configuration file using the "win" key, I 
 may release a configuration file using the "alt" key at a later date)
+
+If you installed your system via wifi rather than ethernet then you will need to run the "wifi_fix.sh" script otherwise 
+you will end up with two IP addresses which could lead to conflicts. (this issue is created due to installing without a 
+desktop environment and using wifi which creates an entry within the interfaces file within '/etc/network/interfaces' 
