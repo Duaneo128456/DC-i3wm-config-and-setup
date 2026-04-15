@@ -4,7 +4,7 @@ The only options selected during installation for this setup to work is "Standar
 
 
 ## *Please read "Install_instructions.txt" before installing this set of scripts.*
-## *Preferred method of install is to install via ethernet ... You will need to run an additional script if you used wifi! Please run "wifi_fix.sh" to resolve having two IP addressed due to wifi install of debian Trixie*
+## *Preferred method of install is to install via ethernet ... You will need to run an additional script if you used wifi! Please run "wifi_fix.sh" to resolve having two IP addressed due to wifi install of Debian Trixie*
 
 ### What is being done via this project:
 - installing a basic suite of applications, including a web browser, a text editor, a file manager, a photo viewer and a terminal.   
